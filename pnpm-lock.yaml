@@ -10,19 +10,19 @@ importers:
     dependencies:
       '@types/next-pwa':
         specifier: ^5.6.9
-        version: 5.6.9(@babel/core@7.28.5)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
+        version: 5.6.9(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next:
         specifier: 12.3.7
-        version: 12.3.7(@babel/core@7.28.5)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
+        version: 12.3.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-pwa:
         specifier: ^5.5.4
-        version: 5.6.0(@babel/core@7.28.5)(next@12.3.7(@babel/core@7.28.5)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(webpack@5.104.1)
+        version: 5.6.0(@babel/core@7.28.5)(next@12.3.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(webpack@5.104.1)
       react:
         specifier: 18.3.1
         version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.3.1)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@types/node':
         specifier: 25.0.10
@@ -31,8 +31,8 @@ importers:
         specifier: 18.3.27
         version: 18.3.27
       '@types/react-dom':
-        specifier: 18.0.6
-        version: 18.0.6
+        specifier: 18.3.7
+        version: 18.3.7(@types/react@18.3.27)
       eslint:
         specifier: 9.39.2
         version: 9.39.2
@@ -813,8 +813,10 @@ packages:
   '@types/prop-types@15.7.15':
     resolution: {integrity: sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==}
 
-  '@types/react-dom@18.0.6':
-    resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
+  '@types/react-dom@18.3.7':
+    resolution: {integrity: sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==}
+    peerDependencies:
+      '@types/react': ^18.0.0
 
   '@types/react@18.3.27':
     resolution: {integrity: sha512-cisd7gxkzjBKU2GgdYrTdtQx1SORymWyaAFhaxQPK9bYO9ot3Y5OikQRvY0VYQtvwjeQnizCINJAenh/V7MK2w==}
@@ -2252,10 +2254,10 @@ packages:
   randombytes@2.1.0:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
 
-  react-dom@18.2.0:
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+  react-dom@18.3.1:
+    resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
-      react: ^18.2.0
+      react: ^18.3.1
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -3689,12 +3691,12 @@ snapshots:
     dependencies:
       minimatch: 10.1.1
 
-  '@types/next-pwa@5.6.9(@babel/core@7.28.5)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)':
+  '@types/next-pwa@5.6.9(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@types/node': 25.0.10
       '@types/react': 18.3.27
-      '@types/react-dom': 18.0.6
-      next: 12.3.7(@babel/core@7.28.5)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
+      '@types/react-dom': 18.3.7(@types/react@18.3.27)
+      next: 12.3.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       workbox-build: 6.6.0
     transitivePeerDependencies:
       - '@babel/core'
@@ -3713,7 +3715,7 @@ snapshots:
 
   '@types/prop-types@15.7.15': {}
 
-  '@types/react-dom@18.0.6':
+  '@types/react-dom@18.3.7(@types/react@18.3.27)':
     dependencies:
       '@types/react': 18.3.27
 
@@ -5160,12 +5162,12 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-pwa@5.6.0(@babel/core@7.28.5)(next@12.3.7(@babel/core@7.28.5)(react-dom@18.2.0(react@18.3.1))(react@18.3.1))(webpack@5.104.1):
+  next-pwa@5.6.0(@babel/core@7.28.5)(next@12.3.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(webpack@5.104.1):
     dependencies:
       babel-loader: 8.4.1(@babel/core@7.28.5)(webpack@5.104.1)
       clean-webpack-plugin: 4.0.0(webpack@5.104.1)
       globby: 11.1.0
-      next: 12.3.7(@babel/core@7.28.5)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
+      next: 12.3.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       terser-webpack-plugin: 5.3.16(webpack@5.104.1)
       workbox-webpack-plugin: 6.6.0(webpack@5.104.1)
       workbox-window: 6.6.0
@@ -5178,14 +5180,14 @@ snapshots:
       - uglify-js
       - webpack
 
-  next@12.3.7(@babel/core@7.28.5)(react-dom@18.2.0(react@18.3.1))(react@18.3.1):
+  next@12.3.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@next/env': 12.3.7
       '@swc/helpers': 0.4.11
       caniuse-lite: 1.0.30001763
       postcss: 8.4.14
       react: 18.3.1
-      react-dom: 18.2.0(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
       styled-jsx: 5.0.7(@babel/core@7.28.5)(react@18.3.1)
       use-sync-external-store: 1.2.0(react@18.3.1)
     optionalDependencies:
@@ -5351,7 +5353,7 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  react-dom@18.2.0(react@18.3.1):
+  react-dom@18.3.1(react@18.3.1):
     dependencies:
       loose-envify: 1.4.0
       react: 18.3.1
