@@ -14,23 +14,16 @@ jobs:
   build:
     timeout-minutes: 10
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
 
     steps:
       - uses: actions/checkout@v6
         with:
-          fetch-depth: 1
+          persist-credentials: true
 
-      - uses: pnpm/action-setup@v4
+      - uses: oven-sh/setup-bun@v2
         with:
-          run_install: false
+          bun-version-file: "package.json"
 
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 24
-          cache: "pnpm"
+      - run: bun install --frozen-lockfile
 
-      - run: pnpm install --frozen-lockfile
-
-      - run: pnpm build
+      - run: bun run build
